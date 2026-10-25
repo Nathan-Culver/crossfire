@@ -1,0 +1,255 @@
+[
+  {
+    "scenario": "crossroads",
+    "difficulty": "easy",
+    "seed": 777,
+    "steps": 189,
+    "winner": 0,
+    "losses": [
+      5,
+      6
+    ],
+    "initiatives": 143,
+    "pending": false,
+    "combat": false,
+    "saves": 9,
+    "error": null,
+    "ms": 2368
+  },
+  {
+    "scenario": "crossroads",
+    "difficulty": "normal",
+    "seed": 777,
+    "steps": 119,
+    "winner": 0,
+    "losses": [
+      5,
+      6
+    ],
+    "initiatives": 75,
+    "pending": false,
+    "combat": false,
+    "saves": 6,
+    "error": null,
+    "ms": 4022
+  },
+  {
+    "scenario": "crossroads",
+    "difficulty": "hard",
+    "seed": 777,
+    "steps": 103,
+    "winner": 0,
+    "losses": [
+      3,
+      6
+    ],
+    "initiatives": 63,
+    "pending": false,
+    "combat": false,
+    "saves": 5,
+    "error": null,
+    "ms": 11351
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "easy",
+    "seed": 777,
+    "steps": 33,
+    "winner": 1,
+    "losses": [
+      6,
+      1
+    ],
+    "initiatives": 20,
+    "pending": false,
+    "combat": false,
+    "saves": 2,
+    "error": null,
+    "ms": 881
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 777,
+    "steps": 60,
+    "winner": 0,
+    "losses": [
+      5,
+      6
+    ],
+    "initiatives": 31,
+    "pending": false,
+    "combat": false,
+    "saves": 3,
+    "error": null,
+    "ms": 2481
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "hard",
+    "seed": 777,
+    "steps": 72,
+    "winner": 1,
+    "losses": [
+      6,
+      5
+    ],
+    "initiatives": 37,
+    "pending": false,
+    "combat": false,
+    "saves": 4,
+    "error": null,
+    "ms": 5676
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "easy",
+    "seed": 777,
+    "steps": 123,
+    "winner": 1,
+    "losses": [
+      6,
+      5
+    ],
+    "initiatives": 102,
+    "pending": false,
+    "combat": false,
+    "saves": 6,
+    "error": null,
+    "ms": 1000
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "normal",
+    "seed": 777,
+    "steps": 120,
+    "winner": 0,
+    "losses": [
+      4,
+      6
+    ],
+    "initiatives": 93,
+    "pending": false,
+    "combat": false,
+    "saves": 6,
+    "error": null,
+    "ms": 2683
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "hard",
+    "seed": 777,
+    "steps": 120,
+    "winner": 1,
+    "losses": [
+      6,
+      5
+    ],
+    "initiatives": 92,
+    "pending": false,
+    "combat": false,
+    "saves": 6,
+    "error": null,
+    "ms": 5477
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 4317,
+    "variants": {
+      "buildingCommand": true
+    },
+    "steps": 70,
+    "winner": 0,
+    "losses": [
+      4,
+      6
+    ],
+    "initiatives": 45,
+    "pending": false,
+    "combat": false,
+    "saves": 4,
+    "error": null,
+    "ms": 3362
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 4317,
+    "variants": {
+      "platoonAssault": true
+    },
+    "steps": 70,
+    "winner": 0,
+    "losses": [
+      4,
+      6
+    ],
+    "initiatives": 45,
+    "pending": false,
+    "combat": false,
+    "saves": 4,
+    "error": null,
+    "ms": 3119
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 4317,
+    "variants": {
+      "hiddenOnOne": true
+    },
+    "steps": 68,
+    "winner": 1,
+    "losses": [
+      6,
+      5
+    ],
+    "initiatives": 40,
+    "pending": false,
+    "combat": false,
+    "saves": 3,
+    "error": null,
+    "ms": 3480
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 4317,
+    "variants": {
+      "hiddenOnTwo": true
+    },
+    "steps": 68,
+    "winner": 1,
+    "losses": [
+      6,
+      5
+    ],
+    "initiatives": 40,
+    "pending": false,
+    "combat": false,
+    "saves": 3,
+    "error": null,
+    "ms": 3454
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "seed": 4317,
+    "variants": {
+      "reconTroops": true
+    },
+    "steps": 70,
+    "winner": 0,
+    "losses": [
+      4,
+      6
+    ],
+    "initiatives": 45,
+    "pending": false,
+    "combat": false,
+    "saves": 4,
+    "error": null,
+    "ms": 3072
+  }
+]

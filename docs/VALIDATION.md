@@ -7,3 +7,9 @@
 - Phone-width iframe (390 × 844): 8/8 interaction/layout checks passed: no page overflow, full map fit, pinch, pan, reset-to-fit, touch selection, help-dialog bounds, full-screen bounds. Touch input used synthetic PointerEvents through a test page, not physical phone hardware.
 
 The UI and rules are independently implemented and remain subject to further tabletop comparison. Coverage boundaries are documented in STATUS.md.
+
+## v0.1.1 completion audit
+
+All 14 additional seeded battles reached victory: every scenario at Easy, Normal and Hard (9 runs), plus each of the five optional variants in a Farm battle. State was validated after every action and portable saves were repeatedly encoded/decoded during play. Full results are in COMPLETION-AUDIT.json. These are automated engine playthroughs, not a claim that every possible human decision path was tested.
+
+The review also found and fixed a UI edge case: the automatic AI commander choice in close combat could include a commander forbidden by the optional same-building rule. The UI now uses the engine's shared eligibility check. Version 0.1.0 saves remain supported and upgrade on load. Two regression checks cover the fix and save compatibility (31 total tests).
