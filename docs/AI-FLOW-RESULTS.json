@@ -1,0 +1,35 @@
+[
+  {
+    "difficulty": "easy",
+    "steps": 113,
+    "winner": 0,
+    "initiatives": 69,
+    "squadLosses": [
+      2,
+      6
+    ],
+    "milliseconds": 1083
+  },
+  {
+    "difficulty": "normal",
+    "steps": 117,
+    "winner": 1,
+    "initiatives": 82,
+    "squadLosses": [
+      6,
+      3
+    ],
+    "milliseconds": 3231
+  },
+  {
+    "difficulty": "hard",
+    "steps": 125,
+    "winner": 0,
+    "initiatives": 63,
+    "squadLosses": [
+      4,
+      6
+    ],
+    "milliseconds": 11180
+  }
+]

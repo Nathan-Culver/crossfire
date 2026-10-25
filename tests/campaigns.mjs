@@ -1,0 +1,3 @@
+import {writeFileSync} from 'node:fs';
+import * as E from '../engine.js';import {chooseAction,applyAI} from '../ai.js';
+const result=[];for(const difficulty of ['easy','normal','hard']){const s=E.newGame({difficulty,seed:3859104}),start=Date.now();let steps=0;for(;steps<400&&s.winner===null;steps++){const a=chooseAction(s);try{applyAI(s,a);}catch(e){throw Error(`${difficulty}, ${steps}, ${JSON.stringify(a)}: ${e.message}`);}}const row={difficulty,steps,winner:s.winner,initiatives:s.initiative,squadLosses:[0,1].map(side=>s.units.filter(u=>u.side===side&&u.dead&&E.isSquad(u)).length),milliseconds:Date.now()-start};console.log(JSON.stringify(row));result.push(row);}writeFileSync('docs/AI-FLOW-RESULTS.json',JSON.stringify(result,null,2)+'\n');
