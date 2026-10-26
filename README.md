@@ -39,4 +39,4 @@ See [controls](docs/CONTROLS.md) and [Army Creation](docs/ARMY-CREATION.md) for 
 
 Player-controlled dice and the saved **Auto-roll my dice** switch are available in Operations. Physical dice entry is optional. Historical shot lines, Find shot, and colored LOS inspections explain reactive fire. See [player dice](docs/PLAYER-DICE.md) and [LOS feedback](docs/LOS-FEEDBACK.md) for controls and validation.
 
-To fire: select an infantry or HMG stand during your initiative, choose **Fire** beside the map, choose a highlighted enemy or **Target** button, then **Open fire**. With auto-roll off, roll the requested dice and continue.
+To fire: select an infantry or HMG stand during your initiative, choose **Fire** beside the map, choose a highlighted enemy or **Target** button, then **Open fire**. With auto-roll off, roll the requested dice; resolution and qualifying initiative loss happen automatically.
