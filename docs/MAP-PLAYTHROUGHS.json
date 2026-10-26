@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "crossroads",
+    "difficulty": "easy",
+    "style": "mixed",
+    "winner": 0,
+    "actions": 111,
+    "error": null
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "normal",
+    "style": "woodland",
+    "winner": 1,
+    "actions": 115,
+    "error": null
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "hard",
+    "style": "village",
+    "winner": 1,
+    "actions": 37,
+    "error": null
+  }
+]
