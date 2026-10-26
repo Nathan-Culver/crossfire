@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "patrol",
+    "difficulty": "easy",
+    "steps": 343,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "kind": "patrol",
+    "difficulty": "normal",
+    "steps": 48,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "kind": "patrol",
+    "difficulty": "hard",
+    "steps": 36,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "kind": "company",
+    "difficulty": "easy",
+    "steps": 189,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "kind": "company",
+    "difficulty": "normal",
+    "steps": 113,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "kind": "company",
+    "difficulty": "hard",
+    "steps": 145,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  }
+]

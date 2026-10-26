@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {newGame} from '../engine.js';import {armyTemplate} from '../army.js';import {chooseAction,applyAI} from '../ai.js';
+test('small patrol AI considers reachable nearby terrain on its first initiative',()=>{for(const difficulty of ['easy','normal','hard']){const s=newGame({difficulty,seed:94321,armies:[armyTemplate('british','patrol'),armyTemplate('german','patrol')]});const a=chooseAction(s);assert.equal(a.type,'move');assert.doesNotThrow(()=>applyAI(s,a));}});

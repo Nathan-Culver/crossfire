@@ -1,0 +1,101 @@
+[
+  {
+    "scenario": "crossroads",
+    "difficulty": "easy",
+    "steps": 129,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "crossroads",
+    "difficulty": "normal",
+    "steps": 131,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "crossroads",
+    "difficulty": "hard",
+    "steps": 125,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "easy",
+    "steps": 33,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "normal",
+    "steps": 60,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "hard",
+    "steps": 75,
+    "winner": 1,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "easy",
+    "steps": 92,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "normal",
+    "steps": 124,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "hard",
+    "steps": 124,
+    "winner": 0,
+    "error": null,
+    "smokeMissionsUsed": [
+      0,
+      0
+    ]
+  }
+]
