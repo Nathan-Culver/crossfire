@@ -1,4 +1,4 @@
-# Infantry release coverage · v0.4.0
+# Infantry release coverage · v0.5.0
 
 This is an infantry-first playable adaptation, not a claim of exhaustive reproduction of every Crossfire supplement, organization, or asset.
 
@@ -22,6 +22,8 @@ This is an infantry-first playable adaptation, not a claim of exhaustive reprodu
 - West/east/north/south or drawn deployment zones, zone depths, concealment selection and first initiative. Deployment checks the whole stand footprint.
 - Free pan, yaw, pitch, target height, orthographic/perspective projection, touch pinch/pan/twist, Fit and Focus. Both renderers share the rule geometry; camera height remains cosmetic.
 - Requested default-off Lloydian target-priority house rule: bypass a suppressed nearest target for the nearest eligible unsuppressed target. Strict baseline is the default. LOS, arcs and group restrictions still apply.
+
+- Three independent default-off Nathan Culver variants: three-dice smoke with opponent/bonus placement, three-dice rally removing levels, and simultaneous per-stand assault rolls with status category bonuses and either-side fallback. See CUSTOM-VARIANTS.md for complete custom resolution and validation.
 
 ## Deliberate boundaries / remaining work
 

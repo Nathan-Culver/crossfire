@@ -11,7 +11,7 @@ function perform(s,a){
   case 'rally':return E.rally(s,a.id);
   case 'recon':return E.recon(s,a.ids,a.terrainId);
   case 'smoke':return E.smokeMission(s,a.id,a.to,a.angle);
-  case 'combat':return E.resolveCombat(s,a.groups,a.assistA,a.assistD);
+  case 'combat':return E.resolveCombat(s,a.groups,a.assistA,a.assistD,a.targets);
   default:throw Error('Unknown dice action.');
  }
 }

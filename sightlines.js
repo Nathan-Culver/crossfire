@@ -3,6 +3,8 @@ import {firePoint,mix} from './geometry.js';
 
 // Preview uses the same rules and the same virtual movement position as resolution.
 export function sightlinePreview(s,state={}){
+ if(s.smokeChoice){const c=s.smokeChoice,fo=unit(s,c.id),target=state.target;if(!fo||!target)return[];const view={...s,smoke:s.smoke.filter(m=>m.id!==c.primaryId)},sources=[{from:fo,label:'Observer LOS'},...(c.kind==='scatter'?[{from:{...c.target,id:'original-smoke-target',side:c.side},label:'Original target LOS'}]:[])];return sources.map(({from,label})=>{const result=sight(view,from,{...target,id:'smoke-choice',side:1-c.side});return{from:firePoint(view,from),to:target,clear:result.clear,label:label+': '+result.reason};});}
+
  const selected=((state.mode==='fire'||s.pending?state.fireIds:null)||state.selected||[]).map(id=>unit(s,id)).filter(u=>u&&(!s.pending||u.side!==s.pending.side));
  let target=state.target?.unitId?unit(s,state.target.unitId):state.target;
  if(s.pending){const m=s.pending.moves[s.pending.index],u=unit(s,m.id);target=u&&{...u,...mix(m.from,m.to,state.reactionT??.5)};}

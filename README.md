@@ -52,3 +52,7 @@ Full-screen tabletop play keeps Orders, Units, Markers, Dice/log, Game and Camer
 Orbit/pan/tilt, perspective/orthographic projection, camera height and two-finger twist are available. Tables can be rectangular, square, round, oval, hexagonal or a drawn convex outline. Choose dimensions, draw deployment zones or pick starting edges, choose concealment and first initiative, and save maps for reuse.
 
 Suppressed enemies are optional proximity targets when the variant is enabled: you can bypass them for the nearest eligible unsuppressed enemy, while retaining the nearest suppressed enemy as a choice. Enable this labelled house rule during setup to change the standard proximity targeting. It applies equally to both sides and firegroups/Crossfires. See [tabletop controls and validation](docs/TABLETOP-CONTROLS.md).
+
+## Update 0.5.0
+
+Three separately selectable, default-off house rules add three-dice smoke, level-removing rally and simultaneous per-stand assaults. Smoke resolves 0–3 successes with initiative changes, opponent scatter placement and a bonus second target. Rally removes one condition level per 5–6. Assaults roll both sides before damage, with target status category bonuses and either-side fallback. Human manual/physical dice, automatic dice, AI decisions and pending saves are supported. See [custom variant details and controls](docs/CUSTOM-VARIANTS.md).
