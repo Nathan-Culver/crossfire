@@ -1,4 +1,4 @@
-export const VERSION='0.2.0',B=32,W=1200,H=1000;
+export const VERSION='0.2.1',B=32,W=1200,H=1000;
 export const TYPES={fo:{name:'Forward observer',dice:0},rifle:{name:'Rifle squad',dice:3,squad:true},smg:{name:'SMG squad',dice:2,squad:true},hmg:{name:'HMG team',dice:4,squad:true},pc:{name:'Platoon commander',dice:0},cc:{name:'Company commander',dice:0}};
 export const NATIONS={british:{name:'British',command:'start'},us:{name:'US',command:'start'},german:{name:'German',command:'free'},soviet:{name:'Soviet',command:'both',reckless:true},japanese:{name:'Japanese',command:'start',reckless:true},italian:{name:'Italian',command:'both'}};
 export const VARIANTS={
