@@ -5,8 +5,8 @@
 3. Drag a ready stand. Its miniature follows the pointer, with a line from its start. A yellow route has a legal endpoint; a red route explains the problem. Release to commit, or release at an invalid endpoint to snap back. Enemy reactive fire can stop a legal move before it reaches its destination.
 4. Stop in the first new terrain feature entered. Use another move to continue. There is no distance allowance. Pinned/Suppressed troops must rally; prone troops must stand up. National command requirements still apply.
 5. For precise placement, select a stand and press Focus, or pinch/wheel to zoom. Move + tap + Confirm remains available as an alternative to dragging. Current and recent movement trails stay on the table.
-6. Drag empty table space to pan; two fingers pan/pinch. Pan camera mode drags the view even from a miniature. In the 3D view, right-drag or Space-drag also pans. Fit resets the full-table view; Tilt switches angled and overhead cameras. The 2D plan uses the exact rule footprints.
-7. Orders returns to the command desk from a full-screen map. Use it to choose firing, rally, assault, recon, or a pending reaction.
+6. Drag empty table space to pan; two fingers pan/pinch. Pan camera mode drags the view even from a miniature. In the 3D view, right-drag orbits; Space/middle-drag pans. Fit resets the full-table view; Tilt switches angled and overhead cameras. The 2D plan uses the exact rule footprints.
+7. The translucent Orders tab opens commands over a full-screen map. Use it to choose firing, rally, assault, recon, or a pending reaction.
 
 P, S and NF physical-style markers appear automatically. Pinned troops may fire but not move; Suppressed troops may do neither. Rally clears Pin/Suppression on success. NO FIRE limits reactive fire only and clears when initiative changes. The marker tray explains each marker and offers an explicit manual referee mode for adjusting stand state. Prone poses and concealment are separately identified.
 

@@ -15,7 +15,7 @@ Select **Plan an operation**, choose a scenario or create both army lists, and d
 - Solo Easy/Normal/Hard, or two-player hotseat.
 - Autosave, a separate local checkpoint, JSON export/import across devices.
 - Mobile touch pan/pinch, desktop wheel/keyboard zoom, full-map fit and full screen.
-- Five optional infantry variants from Steven Thomas's Balagan house rules; all default off.
+- Five optional infantry variants from Steven Thomas's Balagan house rules default off; the requested Lloydian suppressed-target option defaults off.
 
 Use **Operations → Field guide** for help, scope and references. This is an infantry release with documented boundaries, not an exhaustive reproduction of every original rule, force list or supplement. See [coverage](docs/STATUS.md) and [sources](docs/SOURCES.md).
 
@@ -44,3 +44,11 @@ To fire: select an infantry or HMG stand during your initiative, choose **Fire**
 ## Update 0.3.0
 
 Setup now includes a custom battlefield editor, automatic landscape generation, ten reusable map slots, and map export/import. Terrain boundaries are shared by LOS and both renderers. Farm assault supports custom objective sectors. See [battlefield controls and validation](docs/BATTLEFIELDS.md).
+
+## Update 0.4.0
+
+Full-screen tabletop play keeps Orders, Units, Markers, Dice/log, Game and Camera in translucent overlays. Tap a friendly stand and then an enemy to plan fire. Hold a friendly stand for context orders. Shift-click friendly stands (or use touch Multi-select) to form a group; the first selected stand is the leader. Drag any selected group member to preview the whole group.
+
+Orbit/pan/tilt, perspective/orthographic projection, camera height and two-finger twist are available. Tables can be rectangular, square, round, oval, hexagonal or a drawn convex outline. Choose dimensions, draw deployment zones or pick starting edges, choose concealment and first initiative, and save maps for reuse.
+
+Suppressed enemies are optional proximity targets when the variant is enabled: you can bypass them for the nearest eligible unsuppressed enemy, while retaining the nearest suppressed enemy as a choice. Enable this labelled house rule during setup to change the standard proximity targeting. It applies equally to both sides and firegroups/Crossfires. See [tabletop controls and validation](docs/TABLETOP-CONTROLS.md).

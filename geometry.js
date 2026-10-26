@@ -1,4 +1,5 @@
 import {B,W,H} from './data.js';
+import {tableContains} from './table.js';
 export const EPS=1e-7;
 export const dist=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
 export const mix=(a,b,t)=>({x:a.x+(b.x-a.x)*t,y:a.y+(b.y-a.y)*t});
@@ -11,7 +12,7 @@ export function feature(s,p){return s.terrain.find(t=>inside(p,t.points))||null;
 export function center(t){return{x:t.points.reduce((n,p)=>n+p[0],0)/t.points.length,y:t.points.reduce((n,p)=>n+p[1],0)/t.points.length};}
 export function firePoint(s,u){const f=feature(s,u);return f?.type==='building'?center(f):u;}
 export function footprint(u){const size=['pc','cc','fo'].includes(u.type)?B*.55:B,r=(u.facing||0)*Math.PI/180,c=Math.cos(r),sn=Math.sin(r);return[[-1,-1],[1,-1],[1,1],[-1,1]].map(([x,y])=>[u.x+(x*c-y*sn)*size/2,u.y+(x*sn+y*c)*size/2]);}
-export function edgeDistance(a,b){const ap=footprint(a),bp=footprint(b);if(crosses({x:ap[0][0],y:ap[0][1]},{x:ap[2][0],y:ap[2][1]},bp)||inside(a,bp)||inside(b,ap))return 0;let d=Infinity;for(const [p,q]of [[ap,bp],[bp,ap]])for(const v of p)for(let i=0;i<q.length;i++)d=Math.min(d,pointSegmentDistance({x:v[0],y:v[1]},{x:q[i][0],y:q[i][1]},{x:q[(i+1)%q.length][0],y:q[(i+1)%q.length][1]}));return d;}
+export function edgeDistance(a,b){const ap=footprint(a),bp=footprint(b);if(inside(a,bp)||inside(b,ap)||ap.some((v,i)=>crosses({x:v[0],y:v[1]},{x:ap[(i+1)%ap.length][0],y:ap[(i+1)%ap.length][1]},bp)))return 0;let d=Infinity;for(const [p,q]of [[ap,bp],[bp,ap]])for(const v of p)for(let i=0;i<q.length;i++)d=Math.min(d,pointSegmentDistance({x:v[0],y:v[1]},{x:q[i][0],y:q[i][1]},{x:q[(i+1)%q.length][0],y:q[(i+1)%q.length][1]}));return d;}
 export const near=(a,b)=>edgeDistance(a,b)<B-EPS;
 export function inArc(s,a,b,half=45){const p=firePoint(s,a),q=firePoint(s,b),angle=Math.atan2(q.y-p.y,q.x-p.x)*180/Math.PI,delta=((angle-a.facing+540)%360)-180;return Math.abs(delta)<=half+EPS;}
 export function sight(s,a,b,{direct=false,ignoreSmoke=false}={}){
@@ -34,6 +35,6 @@ export function exposureWindows(s,firer,mover,end,eligible){const a=mover,b=end,
  for(const t of sorted)if(eligible({...mover,...mix(a,b,t)}))result.push([t,t]);
  return result.sort((a,b)=>a[0]-b[0]);
 }
-export const onBoard=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=B/2&&p.y>=B/2&&p.x<=W-B/2&&p.y<=H-B/2;
+export const onBoard=(p,s=null)=>tableContains(s,p,B/2);
 
 export function smokePolygon(m){const angle=(m.angle||0)*Math.PI/180,c=Math.cos(angle),sn=Math.sin(angle);return[[-1,-1],[1,-1],[1,1],[-1,1]].map(([x,y])=>[m.x+x*m.length*B/2*c-y*B/2*sn,m.y+x*m.length*B/2*sn+y*B/2*c]);}

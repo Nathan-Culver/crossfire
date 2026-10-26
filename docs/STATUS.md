@@ -1,10 +1,10 @@
-# Infantry release coverage · v0.2.0
+# Infantry release coverage · v0.4.0
 
 This is an infantry-first playable adaptation, not a claim of exhaustive reproduction of every Crossfire supplement, organization, or asset.
 
 ## Included
 
-- Free positions on a continuous 1200 × 1000 vector board; no hexes, movement allowance, weapon range limit, fixed turns, or forced time limit.
+- Free positions on continuous vector tables, with configurable 600–3000 width and 600–2400 height; no hexes, movement allowance, weapon range limit, fixed turns, or forced time limit.
 - Straight movement with an initial pivot, standalone pivot, group movement, retreat, ground hugging, reactable standing up, terrain-center membership and building capacities.
 - National command doctrines, platoon/company organization, troop quality, nearby commander bonuses, PC replacement.
 - Exact polygon/segment terrain sight lines, building-center firing, friendly-base direct-fire blocking, spotting independent of unit blocking, HMG arcs, group rear-arc restrictions, nearest-target priority.
@@ -17,10 +17,16 @@ This is an infantry-first playable adaptation, not a claim of exhaustive reprodu
 - Readiness explanations, movement coaching, identifiers, contextual help, automatic status tokens and an explicit manual referee marker tray.
 - Custom army list building, point budgets and standalone army JSON export/import. See ARMY-CREATION.md for cost coverage and historical-list limitations.
 
+- Full-screen landscape play with translucent Orders, Units, Markers, Dice/log, Game and Camera panels. Select a friendly stand then an enemy to plan fire; hold a friendly stand for orders. Shift-click or touch Multi-select builds groups in selection order.
+- Rectangle, square, circle, oval, hexagon and convex custom table outlines; terrain is scaled/clipped to the boundary. Ten reusable saved maps, map import/export, procedural terrain generation and custom terrain drawing.
+- West/east/north/south or drawn deployment zones, zone depths, concealment selection and first initiative. Deployment checks the whole stand footprint.
+- Free pan, yaw, pitch, target height, orthographic/perspective projection, touch pinch/pan/twist, Fit and Focus. Both renderers share the rule geometry; camera height remains cosmetic.
+- Requested default-off Lloydian target-priority house rule: bypass a suppressed nearest target for the nearest eligible unsuppressed target. Strict baseline is the default. LOS, arcs and group restrictions still apply.
+
 ## Deliberate boundaries / remaining work
 
 - No vehicles, AT weapons, guns, HE indirect fire, snipers, engineering, mines, wire or fortifications in this release. Off-table smoke support and forward observers are included.
-- Custom army list building and point totals are included. There is no complete historical organization/period catalog, random scenario generator, adjacent-building complex system, linear terrain, depression system, multiplayer networking, or full Hit the Dirt supplement.
+- Custom army list building and point totals are included. There is no complete historical organization/period catalog, historical scenario catalog, adjacent-building complex system, linear terrain, depression system, multiplayer networking, or full Hit the Dirt supplement.
 - Original scenario terrain polygons define the playable geometry; trees, roofs and road drawings are decoration. Roads have no separate mechanical effect. Terrain capacities other than buildings are explicitly scenario-defined.
 - Group destinations default to preserving relative offsets. Use each member's Set path button to choose an individual route; all must end within one stand of the leader's designated endpoint.
 - Each movement action offers one reactive fire action against its current mover. Visibility intervals are partitioned by analytic geometry events. Reaction selection uses a 0.1%-of-route slider; the engine rechecks the exact chosen point.

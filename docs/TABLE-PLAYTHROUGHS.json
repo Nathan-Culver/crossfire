@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "crossroads",
+    "difficulty": "easy",
+    "shape": "oval",
+    "width": 1800,
+    "height": 1200,
+    "blue": "north",
+    "red": "south",
+    "winner": 1,
+    "actions": 105,
+    "error": null
+  },
+  {
+    "scenario": "woods",
+    "difficulty": "normal",
+    "shape": "hexagon",
+    "width": 1500,
+    "height": 1200,
+    "blue": "east",
+    "red": "west",
+    "winner": 1,
+    "actions": 52,
+    "error": null
+  },
+  {
+    "scenario": "farm",
+    "difficulty": "hard",
+    "shape": "circle",
+    "width": 1200,
+    "height": 1200,
+    "blue": "west",
+    "red": "east",
+    "winner": 1,
+    "actions": 111,
+    "error": null
+  }
+]

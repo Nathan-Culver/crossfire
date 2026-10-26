@@ -1,7 +1,8 @@
-export const VERSION='0.3.0',B=32,W=1200,H=1000;
+export const VERSION='0.4.0',B=32,W=1200,H=1000;
 export const TYPES={fo:{name:'Forward observer',dice:0},rifle:{name:'Rifle squad',dice:3,squad:true},smg:{name:'SMG squad',dice:2,squad:true},hmg:{name:'HMG team',dice:4,squad:true},pc:{name:'Platoon commander',dice:0},cc:{name:'Company commander',dice:0}};
 export const NATIONS={british:{name:'British',command:'start'},us:{name:'US',command:'start'},german:{name:'German',command:'free'},soviet:{name:'Soviet',command:'both',reckless:true},japanese:{name:'Japanese',command:'start',reckless:true},italian:{name:'Italian',command:'both'}};
 export const VARIANTS={
+ suppressedOptional:{name:'Fire past suppressed enemies · optional target priority',source:'Lloydian house rule · optional, default OFF',default:false,text:'You may bypass a nearest suppressed stand to fire at the nearest eligible non-suppressed enemy. The nearest suppressed enemy remains a valid choice. LOS and all other firing rules still apply.'},
  buildingCommand:{name:'Commanders inside the same building sector',source:'CF2.3 / CF8.4',text:'A commander can assist troops inside a building only from that same sector.'},
  platoonAssault:{name:'Single-platoon attacking force',source:'CF8.2',text:'An assault may contain squads from one platoon, with a commander in their chain of command.'},
  hiddenOnOne:{name:'Hidden fire reveals only on a 1',source:'CF6.7, variation 2',text:'A concealed firer is revealed if any firing die is 1. Moving, enemy entry, and successful recon still reveal normally.'},

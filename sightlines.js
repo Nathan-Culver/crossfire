@@ -3,7 +3,7 @@ import {firePoint,mix} from './geometry.js';
 
 // Preview uses the same rules and the same virtual movement position as resolution.
 export function sightlinePreview(s,state={}){
- const selected=(state.selected||[]).map(id=>unit(s,id)).filter(u=>u&&(!s.pending||u.side!==s.pending.side));
+ const selected=((state.mode==='fire'||s.pending?state.fireIds:null)||state.selected||[]).map(id=>unit(s,id)).filter(u=>u&&(!s.pending||u.side!==s.pending.side));
  let target=state.target?.unitId?unit(s,state.target.unitId):state.target;
  if(s.pending){const m=s.pending.moves[s.pending.index],u=unit(s,m.id);target=u&&{...u,...mix(m.from,m.to,state.reactionT??.5)};}
  if(!target||!selected.length||!s.pending&&!['fire','los'].includes(state.mode))return[];
@@ -21,7 +21,7 @@ export function lastShotLines(s,viewer=0){
 export function eligibleFireTargets(s,state={}){
  if(state.mode!=='fire'||s.pending||s.pendingDice||s.deployment||s.winner!==null)return[];
  const f=unit(s,state.selected?.[0]);if(!f||f.side!==s.active)return[];
- return visibleUnits(s,state.viewer??0).filter(t=>t.side!==f.side&&!fireSet(s,state.selected,t.id,state.fireMode||'single').error).map(t=>t.id);
+ return visibleUnits(s,state.viewer??0).filter(t=>t.side!==f.side&&!fireSet(s,state.fireIds||state.selected,t.id,state.fireMode||'single').error).map(t=>t.id);
 }
 
 export function lastShotSummary(s,viewer=0){
